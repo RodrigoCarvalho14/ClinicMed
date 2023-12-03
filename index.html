@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Med</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section class="cadastro" id="s1">
+            <div class="title">
+                <h1>Clinic Med</h1>
+            </div>
+            <div class="card-cadastro">
+                <div class="input-area">
+                    <div class="name-area">
+                        <label for="">Nome completo</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="date-area">
+                        <label for="">Data de nascimento</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="cpf-area">
+                        <label for="">CPF</label>
+                        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+                    </div>
+                </div>
+                    <div class="sym-area">
+                        <label for="">Sintomas</label>
+                        <textarea name="symarea" id="sym" cols="30" rows="10" placeholder="Coloque breviamente seus sintomas aqui." required></textarea>
+                    </div>
+                    <div class="priv-area">
+                        <ul class="list">
+                            <li><label for="urg1" id="urgl1">Razoavel</label><input type="radio" name="urg" id="urg1"></li>
+                            <li><label for="urg2" id="urgl2">Intermediario</label><input type="radio" name="urg" id="urg2"></li>
+                            <li><label for="urg3" id="urgl3">Urgente</label><input type="radio" name="urg" id="urg3"></li>
+                        </ul>
+                    </div>
+                <input type="button" value="Enviar" id="btn" onclick="next()">
+            </div>
+        </section>
+        <section class="cod" id="s2">
+            <p id="codigo"></p>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-# ClinicMed
+# clinicmed
